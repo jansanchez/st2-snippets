@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+select(id="${1:search-category}", name="${2:search-category}")
+	option(value="0") Todas las categorias
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>select</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>select(id="search-category")</description>
+</snippet>

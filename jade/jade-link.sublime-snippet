@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+	link(type="text/css", rel="stylesheet", href="less/style.css")
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>link</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>link(type="text/css", rel="stylesheet", href="less/style.css")</description>
+</snippet>

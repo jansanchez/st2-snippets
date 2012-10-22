@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+	a(href="javascript:;", title="title")
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>a</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>a(href="javascript:;", title="title")</description>
+</snippet>

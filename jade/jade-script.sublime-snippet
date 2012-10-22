@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+script(src="js/script.js")
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>script</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>script(src="js/script.js")</description>
+</snippet>

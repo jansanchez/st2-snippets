@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+meta(name="${1:name}", content="${2:content}")
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>meta</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>meta(name="name", content="content")</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+input(id="${1:id}",name="${2:name}", type="${3:text})
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>input</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>input(id="id",name="name", type="text")</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+table(class="table table-striped")
+	caption captionTitulo
+	thead
+		tr
+			th Uno
+			th Dos
+	tbody
+		tr
+			td uno
+			td dos
+	tfoot
+		tr
+			td &nbsp;
+			td &nbsp;
+
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>table</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.jade</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>table (jade)</description>
+</snippet>

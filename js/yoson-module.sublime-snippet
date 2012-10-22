@@ -1,0 +1,23 @@
+<snippet>
+    <content>
+<![CDATA[
+/**
+* ${2:descripcionDelModulo}
+* @submodule ${3:nombreModulo}
+* @main ${1:default}
+*/
+yOSON.AppCore.addModule("${3:nombreModulo}", function(Sb){
+	var dom = {${4}};
+
+	return {
+		init: function(){
+			${5}
+		},
+		destroy: function(){ /*destruir la instancia de este modulo aqui*/ }
+	};
+});
+]]></content>
+    <tabTrigger>addModule</tabTrigger>
+    <scope>source.js</scope>
+    <description>yOSON addModule</description>
+</snippet>

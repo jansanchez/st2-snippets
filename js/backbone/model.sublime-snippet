@@ -1,0 +1,25 @@
+<snippet>
+<content>
+<![CDATA[
+/**
+* ${2:descripcionDelModulo}
+* @submodule ${3:nombreModulo}
+* @main ${1:default}
+*/
+define(['backbone'], function(Backbone) {
+	var ${3:nombreModulo} = Backbone.Model.extend({
+		defaults : {
+			${4} : ${5}
+		},
+		initialize : function(){
+			${6}
+		}
+	});
+	return ${3:nombreModulo};
+});
+]]>
+</content>
+<tabTrigger>model</tabTrigger>
+<scope>source.js</scope>
+<description>Backbone Model</description>
+</snippet>

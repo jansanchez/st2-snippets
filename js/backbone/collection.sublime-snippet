@@ -1,0 +1,20 @@
+<snippet>
+<content>
+<![CDATA[
+/**
+* ${2:descripcionDelModulo}
+* @submodule ${3:nombreModulo}
+* @main ${1:default}
+*/
+define(['backbone', 'underscore', '${4}'], function(Backbone, _, ${5}) {
+	var ${3:nombreModulo} = Backbone.Collection.extend({
+		model : ${5}
+	});
+	return ${3:nombreModulo};
+});
+]]>
+</content>
+<tabTrigger>collection</tabTrigger>
+<scope>source.js</scope>
+<description>Backbone Collection</description>
+</snippet>

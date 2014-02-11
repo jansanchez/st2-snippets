@@ -1,23 +1,47 @@
 <snippet>
-    <content>
-<![CDATA[
+	<content><![CDATA[
 /**
-* ${2:descripcionDelModulo}
-* @submodule ${3:nombreModulo}
+* ${2:Descripción del módulo}
+* @submodule ${3:nombre_del_modulo}
 * @main ${1:default}
+* @author ${4:Nombre del Autor}
 */
-yOSON.AppCore.addModule("${3:nombreModulo}", function(Sb){
-	var dom = {${4}};
-
-	return {
-		init: function(){
-			${5}
-		},
-		destroy: function(){ /*destruir la instancia de este modulo aqui*/ }
+yOSON.AppCore.addModule("${3:nombre_del_modulo}", function(Sb){
+ 
+	var st = {
+		${5:container}: '${6:#container}',
+		${7:btnSearch}: '${8:#btnSearch}'
+	},
+ 
+	dom = {},
+ 
+	catchDom = function() {
+		dom.${5:container}  = \$(st.${5:container});
+		dom.${7:btnSearch}  = \$(st.${7:btnSearch});
+	},
+ 
+	suscribeEvents = function() {
+		dom.${10:btnSearch}.on('${11:click}', ${12:search});
+	},
+ 
+	${13:search} = function() {
+		${14}
+	},
+ 
+	initialize = function(oP) {
+		\$.extend(st, oP);
+		catchDom();
+		suscribeEvents();
 	};
-});
+ 
+	return {
+		init: initialize
+	};
+ 
+}, ['${15:ruta_del_archivo_de_dependencia.js}']);
 ]]></content>
-    <tabTrigger>addModule</tabTrigger>
-    <scope>source.js</scope>
-    <description>yOSON addModule</description>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>addModule</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.js</scope> -->
 </snippet>
